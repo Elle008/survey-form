@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Pet Popularity Survey</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <main>
+    <header>
+        <img class="logo" src="assets/logo.png" alt="logo">
+            
+        <nav class="nav-links">
+            <ul>
+                <li> <a href="#">Home</a> </li>
+                <li> <a href="#">About</a> </li>
+                <li> <a href="#">Services</a> </li>
+            </ul>
+        </nav>
+            
+        <a id="nav-cta" href="survey-page.html"><button type="button">Take Survey</button></a>
+    </header>
+
+    <section id="survey-section">
+        <div id="form-div">
+            <form action="thank-you.html" id="pet-survey">
+
+                <!-- <h2>What pet is most popular?</h2> -->
+                
+                <label for="fname">Hi, what's your name?</label>
+                <p><input placeholder="First name..." name="fname" id="fname" required></p>
+                <br>
+
+                <label for="email">What's your email address?</label>
+                <p><input placeholder="Email..." name="email" id="email" required></p>
+                <br>
+                
+                <label for="fave-pet">What type of pet would you like to have?</label>
+                <p><input placeholder="Type your answer here..." name="fave-pet" id="fave-pet" ></p>
+                <br>
+
+                <label for="hate-pet">Which type of pet would you absolutely never choose to have?</label>
+                <p><input placeholder="Type your answer here..." name="hate-pet" id="hate-pet" ></p>
+                <br>
+
+                <label> What do you consider most when buying/taking in a pet?</label><br>
+                <input type="checkbox" name="considerations" id="demands" value="demand-of-caring">
+                <label for="demands">The demands of caring for pets</label>
+                <input type="checkbox" name="considerations" id="cost" value="cost of training-and-caring">
+                <label for="cost">The cost for training and care of pets</label>
+                <input type="checkbox" name="considerations" id="price" value="purchase-price">
+                <label for="price">The purchase price of the pet</label>
+                <input type="checkbox" name="considerations" id="character" value="character">
+                <label for="character">The character of the animal</label><br><br>
+
+                <a href="thank-you.html"><button class="submit">Submit</button></a>
+                
+
+            </form>
+
+        </div>
+    </section>
+
+</main>
+</body>
+</html>

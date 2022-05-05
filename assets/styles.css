@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Plus+Jakarta+Sans:wght@300;500;800&display=swap');
+
+
+* {
+    margin: 0;
+    
+    
+}
+body {
+    background-color: #F2F2F2;
+    margin: 0;
+    padding: 0;
+}
+
+a, li, button {
+    font-family: "plus jakarta sans";
+    font-size: 16px;
+    text-decoration: none;
+    color: #01020f;
+}
+
+header {
+    padding: 30px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav-links li a:hover, .nav-links li a:active {
+    color: #FE8265;
+}
+
+button {
+    padding: 8px 20px;
+    border-radius: 50px;
+    border: 0;
+    background-color: #FE8265;
+    color: white;
+}
+
+button:hover {
+    background-color: #f85530;
+}
+
+@media (max-width: 650px) {
+    nav ul, #nav-cta {
+        display: none;
+    }
+}
+
+/* Homepage */
+
+.main-cta button {
+    font-size: 2vw;
+    letter-spacing: 1.5px;
+    padding: 10px 2em;
+}
+
+@media (max-width: 600px) {
+    .main-cta button {
+        font-size: 5vw;
+    }
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 20px;
+}
+
+@media (max-width: 600px) {
+    .row {
+        flex-direction: column-reverse;
+    }
+}
+
+.column {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+@media (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+.title {
+    font-family: "fredoka one", cursive;
+    font-weight: lighter;
+    font-size: 5vw;
+    color: #01020f;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .title {
+        font-size: 9vw;
+    }
+}
+
+#hero {
+    width: 40vw;
+}
+
+@media (max-width: 600px) {
+    #hero {
+        width: 80vw;
+    }
+}
+
+/* Survey Page */
+
+#survey-section, #form-div {
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 2vw;
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+form {
+    background-color: #ffffff;
+    width: 40%;
+    font-family: "plus jakarta sans";
+    padding: 3vw 5vw;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 1120px) {
+    form {
+        width: 60%;
+    }
+}
+
+@media (max-width: 768px) {
+    form {
+        width: 80%;
+    }
+}
+
+label {
+    font-size: 20px;
+    font-weight: 500;
+    color: #C57960;
+    
+}
+input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    border: 1px solid #C57960;
+    margin: 10px 0;
+    
+}
+
+::placeholder {
+    color: #f6a593;
+}
+
+#thank-you-page {
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+}
+
+#message {
+ font-size: 42px;
+}
+
+
+
